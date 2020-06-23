@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: repeat(12, 10vh);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+               "header header"
+               "header header"
+               "nav nav"
+               "main main"
+               "main main"
+               "main main"
+               "main main"
+               "main main"
+               "main main"
+               "main main"
+               "main main"
+               "footer footer"
+}
+
+header {
+    background: black;
+    color: white;
+    grid-area: header;
+}
+
+header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header > ul > li:first-child {
+    flex-grow: 1;
+}
+
+header > p {
+    font-size: 3rem;
+    font-weight: solid;
+    text-align: center;
+}
+
+nav > p {
+    font-family: cursive;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: blue;
+    grid-area: nav;
+    text-align: center;
+}
+
+main {
+    background: url(widow.jpg) 1%;
+    grid-area: main;
+
+}
+
+.stats, .stats2 {
+    background-color: white;
+    height: 35%;
+    width: 35%;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+aside {
+    background-color:yellow;
+    grid-area: aside;
+}
+
+section {
+    background-color: purple;
+    grid-area: section;
+}
+
+article {
+    background-color: gold;
+    grid-area: article;
+}
+
+footer {
+    background-color: black;
+    grid-area: footer;
+    color: white;
+    font-size: 0.5rem;
+}
